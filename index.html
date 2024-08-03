@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="assets/foto.png"/>
+    <title>CV - Guilherme Mattos Conde</title>
+</head>
+<body>
+    <section id="menu">
+        <div>
+            <h1 onclick="mostrarSecao('menu')">&lt;/Guilherme&gt;</h1>
+            <nav>
+                <a class="links-menu" onclick="mostrarSecao('menu')">Home</a>
+                <a class="links-menu experiencia" onclick="mostrarSecao('experiencia')">Experiência</a>
+                <a class="links-menu formacao" onclick="mostrarSecao('formacao')">Formação</a>
+                <a class="links-menu cursos-certificacoes" onclick="mostrarSecao('cursos-certificacoes')">Cursos e Certificações</a>
+                <select id="idioma">
+                    <option value="pt-BR">Português</option>
+                    <option value="en-US">English</option>
+                </select>
+            </nav>
+        </div>
+    </section>
+
+    <main>
+        <section id="dados-pessoais">
+            <img id="foto-perfil" src="assets/foto.png" alt="Foto Guilherme">
+            <div class="container">
+                <h1>Guilherme Mattos Conde</h1>
+                <div id="informacoes-links">
+                    <div id="div-informacoes"></div>
+                    <div id="links">
+                        <a href="https://www.linkedin.com/in/guilherme-mattos-conde/" target="blank"><img src="assets/linkedin-logo.png" alt="Linkedin"><span>Linkedin</span></a>
+                        <a href="https://github.com/guilherme-mattos-conde" target="blank"><img src="assets/github-logo.png" alt="GitHub"><span>GitHub</span></a>
+                        <a href="mailto:guilherme.mattos.conde@gmail.com" target="blank"><img src="assets/email-logo.png" alt="Email"><span>Email</span></a>
+                        <a href="https://wa.me/5543996054046" target="blank"><img src="assets/whatsapp-logo.png" alt="WhatsApp"><span>WhatsApp</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section-cards">
+            <h1 class="titulos experiencia">Experiência</h1>
+            <div id="div-experiencias"></div>
+        </section>
+
+        <section id="formacao" class="section-cards">
+            <h1 class="titulos formacao">Formação</h1>
+            <div id="div-formacao"></div>
+        </section>
+
+        <section id="cursos-certificacoes" class="section-cards">
+            <h1 class="titulos cursos-certificacoes">Cursos e Certificações</h1>
+            <div id="div-cursos-certificacoes"></div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <h3>&copy2024 Guilherme Mattos Conde</h3>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+    <script src="js/mostrarSecao.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+	--cor-fundo1: #F4F2EE;
+	--cor-fundo2: white;
+	--cor1: black;
+    --cor2: #DFDEDB;
+	--cor3: rgb(245, 245, 245);
+    --cor4: gray;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    flex: 1 0 auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto 0 auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+	color: var(--cor-texto1);
+    background-color: var(--cor-fundo1);
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+img {
+    user-select: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+    cursor: pointer;
+}
+
+/* MENU */
+#menu {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    background-color: var(--cor-fundo2);
+    border-bottom: 1px solid var(--cor2);
+}
+#menu div {
+    display: flex;
+    height: 60px;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu h1 {
+    font-size: 18pt;
+}
+#menu h1:hover {
+    cursor: pointer;
+}
+#menu a {
+    margin: 5px;
+    font-weight: bold;
+    font-size: 11pt;
+    color: var(--cor4);
+    transition: .5s;
+}
+#menu a:hover {
+    color: var(--cor1);
+}
+select {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 11pt;
+    color: var(--cor4);
+    transition: .5s;
+}
+select:hover {
+    cursor: pointer;
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+option {
+    font-weight: 100;
+}
+
+/* RODAPÉ */
+#rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 0px 15px var(--cor-sombra);
+}
+#rodape h3 {
+    font-size: 11pt;
+}
+
+/* DADOS PESSOAIS */
+#dados-pessoais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--cor-fundo2);
+    border: 1px solid var(--cor2);
+    border-radius: 10px;
+    margin: 5px 0;
+}
+#foto-perfil {
+    width: 180px;
+}
+#dados-pessoais .container {
+    width: 100%;
+}
+#dados-pessoais h1 {
+    font-size: 22pt;
+    margin: 20px 0;
+    text-align: center;
+}
+#informacoes-links {
+    padding-top: 30px;
+    border-top: 1px solid var(--cor2);
+    display: flex;
+    justify-content: space-around;
+}
+#div-informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+#div-informacoes div {
+    border-bottom: 1px solid var(--cor2);
+    padding: 20px 0;
+}
+#div-informacoes div:last-child {
+    border: none;
+}
+#div-informacoes h2 {
+    font-size: 15pt;
+}
+#div-informacoes p {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+#links {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--cor3);
+}
+#links a {
+    display: flex;
+    align-items: center;
+    font-size: 11pt;
+    transition: .3s;
+}
+#links a:hover {
+    zoom: 110%;
+    font-weight: bold;
+}
+#links img {
+    width: auto;
+    height: 40px;
+    margin-right: 15px;
+}
+
+/* SECTION CARDS */
+section {
+    width: 50vw;
+}
+.titulos {
+    font-size: 20pt;
+}
+.section-cards {
+    padding: 20px;
+    background-color: var(--cor-fundo2);
+    border: 1px solid var(--cor2);
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--cor2);
+}
+.section-cards .cards:last-child {
+    border: none;
+}
+.cards img {
+    height: 80px;
+    margin-right: 20px;
+}
+.cards h1 {
+    font-size: 15pt;
+}
+.cards h2 {
+    font-size: 12pt;
+    font-weight: 100;
+    margin: 5px 0;
+}
+.cards h3 {
+    font-size: 9pt;
+    color: gray;
+}
